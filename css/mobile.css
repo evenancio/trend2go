@@ -33,8 +33,8 @@
     }
 
     .features-grid-template {
-        grid-template-columns: 100%;
-        grid-template-rows: 20% 20% 20% 20% 20%;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
         grid-template-areas: 
             "features-title"
             "features-research"
@@ -55,8 +55,8 @@
     }
 
     .mix-grid-template {
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 20% 20% 20% 20% 20%;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
         grid-template-areas: 
             "mix-container-1 mix-container-2"
             "mix-container-3 mix-container-4" 
@@ -66,8 +66,8 @@
     }
 
     .we-grid-template {
-        grid-template-columns: 100%;
-        grid-template-rows: 20% 40% 40%;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
         grid-template-areas: 
             "we-title"
             "we-image" 
@@ -90,8 +90,8 @@
     }
 
     .testimonials-grid-template {
-        grid-template-columns: 100%;
-        grid-template-rows: 25% 25% 25% 25%;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
         grid-template-areas: 
             "testimonials-title"
             "testimonials-customer-1" 
@@ -100,8 +100,8 @@
     }
 
     .footer-grid-template {
-        grid-template-columns: 100%;
-        grid-template-rows: 20% 80%;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
         grid-template-areas: 
             "footer-title"
             "footer-contactus" 
