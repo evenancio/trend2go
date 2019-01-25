@@ -354,11 +354,25 @@ AddDefaultCharset utf-8
 #    RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 # </IfModule>
 
+RewriteEngine On
+
+# If we receive a forwarded http request from a proxy...
+RewriteCond %{HTTP:X-Forwarded-Proto} =http [OR]
+
+# ...or just a plain old http request directly from the client
+RewriteCond %{HTTP:X-Forwarded-Proto} =""
+RewriteCond %{HTTPS} !=on
+
+# Redirect to https version
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Put the rest of your rewrite rules here
+
 # ----------------------------------------------------------------------
 # | Suppressing the `www.` at the beginning of URLs                    |
 # ----------------------------------------------------------------------
 
- Rewrite www.trend2go.com → trend2go.com
+# Rewrite www.example.com → example.com
 
 # The same content should never be available under two different
 # URLs, especially not with and without `www.` at the beginning.
