@@ -358,7 +358,7 @@ AddDefaultCharset utf-8
 # | Suppressing the `www.` at the beginning of URLs                    |
 # ----------------------------------------------------------------------
 
-# Rewrite www.example.com → example.com
+ Rewrite www.trend2go.com → trend2go.com
 
 # The same content should never be available under two different
 # URLs, especially not with and without `www.` at the beginning.
